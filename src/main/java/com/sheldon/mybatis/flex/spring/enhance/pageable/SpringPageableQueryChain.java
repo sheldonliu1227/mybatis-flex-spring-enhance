@@ -102,19 +102,6 @@ public class SpringPageableQueryChain<T>  extends QueryWrapperAdapter<SpringPage
     }
 
     private static <T> Page<T> pageable2Page(Pageable pageable) {
-        Page<T> page = Page.of(pageable.getPageNumber(), pageable.getPageSize());
-        
-        // 处理排序信息
-        if (pageable.getSort() != null && pageable.getSort().isSorted()) {
-            pageable.getSort().forEach(order -> {
-                String property = camelCase2UnderLine(order.getProperty());
-                page.addOrder(new com.mybatisflex.core.paginate.Order(
-                    property, 
-                    order.isAscending() ? com.mybatisflex.core.paginate.Order.Direction.ASC : com.mybatisflex.core.paginate.Order.Direction.DESC
-                ));
-            });
-        }
-        
-        return page;
+        return Page.of(pageable.getPageNumber(), pageable.getPageSize());
     }
 }
