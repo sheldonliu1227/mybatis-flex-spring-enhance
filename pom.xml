@@ -4,11 +4,46 @@
 
   <groupId>com.sheldon</groupId>
   <artifactId>mybatis-flex-spring-enhance</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
 
-  <name>mybatis-flex-spring-enhance</name>
-  <url>http://maven.apache.org</url>
+  <name>MyBatis Flex Spring Enhance</name>
+  <description>Enhancements for MyBatis Flex with Spring</description>
+  <url>https://github.com/你的GitHub仓库</url>
+
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <url>https://github.com/sheldonliu1227/mybatis-flex-spring-enhance</url>
+    <connection>scm:git:git://github.com/sheldonliu1227/mybatis-flex-spring-enhance.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:sheldonliu1227/mybatis-flex-spring-enhance.git</developerConnection>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>sheldon</id>
+      <name>sheldon liu</name>
+      <email>sheldonliu1227@gmail.com</email>
+    </developer>
+  </developers>
+
+  <distributionManagement>
+    <repository>
+      <id>ossrh</id>
+      <name>OSSRH Release Repository</name>
+      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <name>OSSRH Snapshot Repository</name>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
